@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Shopowner : INPC
 {
-    public void Speak()
+    public string Speak()
     {
-        Debug.Log("Whata ya bouyin");
+        return("Whata ya bouyin");
     }
 }

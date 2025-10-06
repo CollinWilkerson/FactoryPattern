@@ -9,5 +9,5 @@ public enum NPCType
 
 public interface INPC
 {
-    public void Speak();
+    public string Speak();
 }

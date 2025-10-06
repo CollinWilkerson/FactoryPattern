@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Farmer : INPC
 {
-    public void Speak()
+    public string Speak()
     {
-        Debug.Log("You reap wheat you sow!");
+        return("You reap wheat you sow!");
     }
 }

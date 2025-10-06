@@ -6,14 +6,6 @@ public class Client : MonoBehaviour
 
     private void Start()
     {
-        m_SpawnerNPC = gameObject.AddComponent<NPCSpawner>();
-    }
-
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            m_SpawnerNPC.SpawnVillagers();
-        }
+        //m_SpawnerNPC = gameObject.AddComponent<NPCSpawner>();
     }
 }

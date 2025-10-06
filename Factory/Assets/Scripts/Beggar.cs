@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Beggar : INPC
 {
-    public void Speak()
+    public string Speak()
     {
-        Debug.Log("Do You have some change to spare?");
+        return ("Do You have some change to spare?");
     }
 }
