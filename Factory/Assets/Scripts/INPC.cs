@@ -4,10 +4,21 @@ public enum NPCType
 {
     Farmer,
     Beggar,
-    Shopowner
+    Shopowner,
+    knight,
+    scholar
 }
 
-public interface INPC
+[CreateAssetMenu (fileName = "NewNPC", menuName = "NPC", order = 1)]
+public class INPC: ScriptableObject
 {
-    public string Speak();
+    [Tooltip("Flavor text for the charater to say")]
+    [SerializeField] private string line;
+    [Tooltip("The sprite for the character")]
+    public Sprite charSprite;
+
+    public string Speak()
+    {
+        return line;
+    }
 }
